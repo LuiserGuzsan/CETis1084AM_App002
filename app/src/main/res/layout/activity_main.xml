@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.edu.cetis108.cetis1084am_app002.MainActivity">
+
+    <TextView
+        android:text="YOLO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginLeft="108dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="205dp"
+        android:id="@+id/txtResultado" />
+
+    <Button
+        android:text="Sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/btnSumar"
+        android:layout_below="@+id/txtResultado"
+        android:layout_alignRight="@+id/txtResultado"
+        android:layout_alignEnd="@+id/txtResultado"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:onClick="Sumar (MainActivity)" />
+
+    <Button
+        android:text="Restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSumar"
+        android:layout_toRightOf="@+id/btnSumar"
+        android:layout_toEndOf="@+id/btnSumar"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:id="@+id/btnRestar"
+        android:onClick="Restar (MainActivity)" />
+
+    <Button
+        android:text="Multiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSumar"
+        android:layout_alignLeft="@+id/btnSumar"
+        android:layout_alignStart="@+id/btnSumar"
+        android:layout_marginTop="47dp"
+        android:id="@+id/btnMultiplicar"
+        android:onClick="Multiplicar (MainActivity)" />
+
+    <Button
+        android:text="Dividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMultiplicar"
+        android:layout_alignLeft="@+id/btnRestar"
+        android:layout_alignStart="@+id/btnRestar"
+        android:id="@+id/btnDividir"
+        android:onClick="Dividir (MainActivity)" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnRestar"
+        android:layout_alignEnd="@+id/btnRestar"
+        android:layout_marginTop="39dp"
+        android:id="@+id/txdNum1"
+        android:text="Primer Valor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/txdNum1"
+        android:layout_alignRight="@+id/txdNum1"
+        android:layout_alignEnd="@+id/txdNum1"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txdNum2"
+        android:text="Segundo Valor" />
+
+</RelativeLayout>
